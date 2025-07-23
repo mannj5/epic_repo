@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ERROR -1
-#define SUCCESS 0
-
 int main(int argc, char** argv) {
     char c = **(argv + 1);
     int x = atoi(*(argv + 2));
@@ -20,12 +17,12 @@ int main(int argc, char** argv) {
             break;
         case '/':
             if (y == 0) {
-                return ERROR;
+                return EXIT_FAILURE;
             }
             printf("%d\n", x / y);
             break;
         default:
-            return ERROR;
+            return EXIT_FAILURE;
     }
-    return SUCCESS;
+    return EXIT_SUCCESS;
 }
