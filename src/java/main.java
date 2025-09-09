@@ -1,6 +1,8 @@
-package main
+import tree.Tree;
 
-int main(void) {
-	console.println("Hello, World!");
-	return 0;
+public class Main {
+    public static void main(String[] args) {
+        Tree<Integer> t = new Tree<>();
+        System.out.println(T.display());
+    }
 }
